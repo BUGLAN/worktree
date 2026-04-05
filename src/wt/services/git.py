@@ -85,7 +85,10 @@ def list_active_worktrees(context: RepoContext) -> list[WorktreeInfo]:
                 entries.append(current)
                 current = {}
             continue
-        key, value = line.split(" ", 1)
+        if " " in line:
+            key, value = line.split(" ", 1)
+        else:
+            key, value = line, ""
         current[key] = value
     if current:
         entries.append(current)
