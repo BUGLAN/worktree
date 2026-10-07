@@ -338,3 +338,8 @@ git commit -m "feat: harden validation and output"
 - Type consistency: `RepoContext`, `WorktreeInfo`, and `ArchivedWorktree` names are consistent across tasks
 
 Plan complete and saved to `docs/superpowers/plans/2026-04-05-worktree-cli.md`. The user already requested inline execution, so implementation should continue in this session.
+
+
+
+
+1
